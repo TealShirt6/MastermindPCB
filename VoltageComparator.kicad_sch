@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "27efa7d4-c0ea-41ee-a255-d218a4622b77")
 	(paper "A5")
+	(title_block
+		(title "Voltage Tolerance Comparator")
+		(date "2026-03-14")
+	)
 	(lib_symbols
 		(symbol "74xx:74LS08"
 			(pin_names
@@ -1352,6 +1356,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1661,13 +1790,14 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0da317d0-2df5-44f4-8ade-b8d6da169a93")
-		(property "Reference" "U4"
+		(property "Reference" "U5"
 			(at 58.42 95.2416 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "74LS08"
@@ -1751,20 +1881,20 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "U8")
-					(unit 1)
+					(reference "U5")
+					(unit 3)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
-					(reference "U6")
-					(unit 1)
+					(reference "U5")
+					(unit 2)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "U12")
-					(unit 1)
+					(reference "U5")
+					(unit 4)
 				)
 			)
 		)
@@ -1779,7 +1909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1363ab3c-fc50-4c11-928f-bc334b648631")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR040"
 			(at 78.74 67.31 0)
 			(effects
 				(font
@@ -1830,19 +1960,19 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "#PWR06")
+					(reference "#PWR046")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "#PWR0101")
+					(reference "#PWR040")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
-					(reference "#PWR02")
+					(reference "#PWR044")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "#PWR08")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -1857,7 +1987,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c618e94-47e6-4a8d-b0a0-774db6a129a4")
-		(property "Reference" "R?"
+		(property "Reference" "R6"
 			(at 50.8 60.9599 0)
 			(effects
 				(font
@@ -1912,19 +2042,19 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "R10")
+					(reference "R14")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "R?")
-					(unit 1)
-				)
-				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
 					(reference "R6")
 					(unit 1)
 				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
+					(reference "R10")
+					(unit 1)
+				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "R14")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -1940,7 +2070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68e41ab9-608b-40e8-8ad7-1bcdc0171796")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR039"
 			(at 34.29 67.31 0)
 			(effects
 				(font
@@ -1991,19 +2121,19 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "#PWR05")
+					(reference "#PWR045")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "#PWR0102")
+					(reference "#PWR039")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
-					(reference "#PWR01")
+					(reference "#PWR043")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "#PWR07")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -2018,7 +2148,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82373a52-fb37-426e-9e47-bd2ca2cd566d")
-		(property "Reference" "R?"
+		(property "Reference" "R7"
 			(at 67.31 60.9599 0)
 			(effects
 				(font
@@ -2073,19 +2203,19 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "R11")
+					(reference "R15")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "R?")
-					(unit 1)
-				)
-				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
 					(reference "R7")
 					(unit 1)
 				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
+					(reference "R11")
+					(unit 1)
+				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "R15")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -2093,35 +2223,34 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 62.23 76.2 90)
+		(at 91.44 81.28 90)
 		(mirror x)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bad953e-9faf-420b-bcdc-7e671cd74789")
-		(property "Reference" "U?"
-			(at 55.88 74.9299 90)
+		(property "Reference" "U18"
+			(at 91.44 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "LM358"
-			(at 55.88 77.4699 90)
+			(at 91.44 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 76.2 0)
+			(at 91.44 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2130,7 +2259,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 62.23 76.2 0)
+			(at 91.44 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2139,7 +2268,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 62.23 76.2 0)
+			(at 91.44 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2174,19 +2303,121 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "U5")
+					(reference "U29")
+					(unit 3)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
+					(reference "U18")
+					(unit 3)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
+					(reference "U28")
+					(unit 3)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
+					(reference "U30")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 62.23 76.2 90)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bad953e-9faf-420b-bcdc-7e671cd7478a")
+		(property "Reference" "U18"
+			(at 68.58 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "LM358"
+			(at 68.58 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(at 62.23 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 62.23 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "ba184d7a-7c7d-44b5-8a1e-aa7153e6d511")
+		)
+		(pin "7"
+			(uuid "b02403ed-5222-4693-a72d-1188284fbe43")
+		)
+		(pin "6"
+			(uuid "4edbd987-c925-44f5-8fd7-55df885f5ad8")
+		)
+		(pin "5"
+			(uuid "07d2b598-470b-45fc-b2e9-6ff6e613f522")
+		)
+		(pin "1"
+			(uuid "fa727756-c960-4f5d-a53c-18fd0363598a")
+		)
+		(pin "2"
+			(uuid "45ca707a-b0fd-4dce-b795-b0eb8c922705")
+		)
+		(pin "3"
+			(uuid "cec3546b-8b6d-49e6-9776-26cd0c15adb4")
+		)
+		(pin "4"
+			(uuid "19a5454b-cbd5-473a-8acb-87ca2bdb12bb")
+		)
+		(instances
+			(project "ECE145Mastermind"
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
+					(reference "U29")
 					(unit 2)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "U?")
-					(unit 1)
+					(reference "U18")
+					(unit 2)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
-					(reference "U3")
+					(reference "U28")
 					(unit 2)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "U7")
+					(reference "U30")
 					(unit 2)
 				)
 			)
@@ -2202,13 +2433,14 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98bc18f8-ba07-44cb-b334-164bcc50903b")
-		(property "Reference" "U?"
+		(property "Reference" "U18"
 			(at 57.15 74.9299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "LM358"
@@ -2248,7 +2480,7 @@
 			)
 		)
 		(pin "8"
-			(uuid "ba184d7a-7c7d-44b5-8a1e-aa7153e6d511")
+			(uuid "ba184d7a-7c7d-44b5-8a1e-aa7153e6d512")
 		)
 		(pin "7"
 			(uuid "58367f96-70f3-4613-9ac9-19a496dcbae2")
@@ -2269,24 +2501,182 @@
 			(uuid "5badf94c-0dc3-49a3-8727-0e11d7395e76")
 		)
 		(pin "4"
-			(uuid "19a5454b-cbd5-473a-8acb-87ca2bdb12bb")
+			(uuid "19a5454b-cbd5-473a-8acb-87ca2bdb12bc")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "U5")
+					(reference "U29")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "U?")
+					(reference "U18")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
-					(reference "U3")
+					(reference "U28")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "U7")
+					(reference "U30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6dac6ea-58bf-40d2-bd74-675ec9df8b1b")
+		(property "Reference" "#PWR0302"
+			(at 105.41 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "deb98cad-d887-4302-ba48-0dad3137702f")
+		)
+		(instances
+			(project ""
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
+					(reference "#PWR0502")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
+					(reference "#PWR0402")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
+					(reference "#PWR0602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 83.82 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9acdc0f-ca2c-44d1-b02b-e8cc4edebf39")
+		(property "Reference" "#PWR0301"
+			(at 87.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 80.01 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 83.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52eabd53-b63b-4422-ac8f-921725e400e2")
+		)
+		(instances
+			(project ""
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
+					(reference "#PWR0501")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
+					(reference "#PWR0301")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
+					(reference "#PWR0401")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
+					(reference "#PWR0601")
 					(unit 1)
 				)
 			)
@@ -2301,7 +2691,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dde86caf-02a1-4abe-96d9-1a0afcdccdaa")
-		(property "Reference" "R?"
+		(property "Reference" "R5"
 			(at 44.45 60.96 90)
 			(effects
 				(font
@@ -2354,19 +2744,19 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "R9")
+					(reference "R13")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "R?")
+					(reference "R5")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
-					(reference "R1")
+					(reference "R9")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "R13")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -2381,7 +2771,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f160a702-32fd-4070-9302-3f31e0c62127")
-		(property "Reference" "R?"
+		(property "Reference" "R8"
 			(at 68.58 60.96 90)
 			(effects
 				(font
@@ -2434,19 +2824,19 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/218d925b-79f6-474b-97b2-c0ad78559cda"
-					(reference "R12")
+					(reference "R16")
 					(unit 1)
 				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "R?")
-					(unit 1)
-				)
-				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
 					(reference "R8")
 					(unit 1)
 				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/acb554fe-df67-46ea-bc1c-079edbbfc216"
+					(reference "R12")
+					(unit 1)
+				)
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/d4674d5d-47f2-4c8d-9fae-4e866cda3652"
-					(reference "R16")
+					(reference "R20")
 					(unit 1)
 				)
 			)

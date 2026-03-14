@@ -532,6 +532,12 @@
           "show": true
         },
         {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
@@ -569,14 +575,26 @@
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
           "show": false
         },
         {
           "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
           "show": false
         }
       ],
@@ -641,20 +659,24 @@
       "Root"
     ],
     [
+      "c249946c-91e3-42cd-8f8a-d6059405d3e8",
+      "FSM"
+    ],
+    [
       "4f59e726-7fd4-4ef0-8dbb-7a41976aa953",
-      "VoltageComparator"
+      "Voltage Comparator"
     ],
     [
       "acb554fe-df67-46ea-bc1c-079edbbfc216",
-      "VoltageComparator1"
+      "Voltage Comparator1"
     ],
     [
       "218d925b-79f6-474b-97b2-c0ad78559cda",
-      "VoltageComparator2"
+      "Voltage Comparator2"
     ],
     [
       "d4674d5d-47f2-4c8d-9fae-4e866cda3652",
-      "VoltageComparator3"
+      "Voltage Comparator3"
     ],
     [
       "2f005cfb-eaaa-4acc-992e-faf91d30027a",
@@ -663,10 +685,6 @@
     [
       "9b9c62dc-9f79-4269-b727-e91a3c4aae61",
       "Guess"
-    ],
-    [
-      "c249946c-91e3-42cd-8f8a-d6059405d3e8",
-      "FSM"
     ]
   ],
   "text_variables": {}

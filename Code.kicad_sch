@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "ba192722-d652-4aff-8267-d8d7e5bc82f5")
 	(paper "A5")
+	(title_block
+		(title "Code INput Voltage Dividers")
+		(date "2026-03-14")
+	)
 	(lib_symbols
 		(symbol "Device:R"
 			(pin_numbers
@@ -129,7 +133,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+9V"
+		(symbol "power:+5V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -150,7 +154,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+9V"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -176,7 +180,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -194,7 +198,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+9V_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -232,7 +236,7 @@
 					)
 				)
 			)
-			(symbol "+9V_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -594,7 +598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b976d39-f919-470c-bf33-a294e951a68d")
-		(property "Reference" "R18"
+		(property "Reference" "R24"
 			(at 69.85 58.4199 0)
 			(effects
 				(font
@@ -649,14 +653,14 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R18")
+					(reference "R24")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+9V")
+		(lib_id "power:+5V")
 		(at 77.47 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -665,8 +669,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "585cda65-9b39-4cc4-9f35-2f73eb66d6a7")
-		(property "Reference" "#PWR04"
-			(at 77.47 46.99 0)
+		(property "Reference" "#PWR053"
+			(at 77.47 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -700,7 +704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 77.47 43.18 0)
 			(effects
 				(font
@@ -715,14 +719,14 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR04")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+9V")
+		(lib_id "power:+5V")
 		(at 57.15 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -731,8 +735,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f3257f7-8484-49a6-9c80-cbfad580d973")
-		(property "Reference" "#PWR023"
-			(at 57.15 46.99 0)
+		(property "Reference" "#PWR049"
+			(at 57.15 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -766,7 +770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 57.15 43.18 0)
 			(effects
 				(font
@@ -781,7 +785,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR023")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -797,7 +801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70fb93ff-9aeb-41c6-91e1-2ea6761be2a2")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR054"
 			(at 77.47 69.85 0)
 			(effects
 				(font
@@ -847,14 +851,14 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR025")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+9V")
+		(lib_id "power:+5V")
 		(at 67.31 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -863,8 +867,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "977d6c51-92ee-4007-9ea3-95ddef10c612")
-		(property "Reference" "#PWR03"
-			(at 67.31 46.99 0)
+		(property "Reference" "#PWR051"
+			(at 67.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -898,7 +902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 67.31 43.18 0)
 			(effects
 				(font
@@ -913,7 +917,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR03")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -929,7 +933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9991336e-267b-4c8d-bb8c-bb73401dd036")
-		(property "Reference" "R20"
+		(property "Reference" "R28"
 			(at 88.9 58.4199 0)
 			(effects
 				(font
@@ -984,7 +988,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R20")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -1000,7 +1004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b2b3f0c-8bd2-4c38-8cfd-2366a8776508")
-		(property "Reference" "R19"
+		(property "Reference" "R26"
 			(at 80.01 58.4199 0)
 			(effects
 				(font
@@ -1055,7 +1059,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R19")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -1071,7 +1075,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac789692-12b4-4a23-9084-902c99eda972")
-		(property "Reference" "R2"
+		(property "Reference" "R21"
 			(at 59.69 48.2599 0)
 			(effects
 				(font
@@ -1126,7 +1130,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R2")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -1142,7 +1146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c04f28dc-3e58-492f-a38e-e1129a5a4f73")
-		(property "Reference" "R4"
+		(property "Reference" "R25"
 			(at 80.01 48.2599 0)
 			(effects
 				(font
@@ -1197,7 +1201,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R4")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -1213,7 +1217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9d6014d-a507-4372-ad06-75ce59f92cf7")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR056"
 			(at 86.36 69.85 0)
 			(effects
 				(font
@@ -1263,7 +1267,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR026")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -1279,7 +1283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd9311b1-0ab3-4fbf-a50a-53c95d5fa7da")
-		(property "Reference" "R17"
+		(property "Reference" "R22"
 			(at 59.69 58.4199 0)
 			(effects
 				(font
@@ -1334,7 +1338,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R17")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -1350,7 +1354,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2abde26-6a29-49b8-bc50-39918da8c55c")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR050"
 			(at 57.15 69.85 0)
 			(effects
 				(font
@@ -1400,7 +1404,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR010")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -1416,7 +1420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e48c60de-14b4-4329-a29b-40394bbe5f68")
-		(property "Reference" "R5"
+		(property "Reference" "R27"
 			(at 88.9 48.2599 0)
 			(effects
 				(font
@@ -1471,14 +1475,14 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R5")
+					(reference "R27")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+9V")
+		(lib_id "power:+5V")
 		(at 86.36 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1487,8 +1491,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e65416ac-9e1b-4b79-8f31-53768879d443")
-		(property "Reference" "#PWR09"
-			(at 86.36 46.99 0)
+		(property "Reference" "#PWR055"
+			(at 86.36 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1522,7 +1526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 86.36 43.18 0)
 			(effects
 				(font
@@ -1537,7 +1541,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR09")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -1553,7 +1557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee019bf8-805f-4cdf-9a1f-7455319783d9")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR052"
 			(at 67.31 69.85 0)
 			(effects
 				(font
@@ -1603,7 +1607,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "#PWR024")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -1619,7 +1623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe87a09d-2f09-4852-a865-a179325a6e20")
-		(property "Reference" "R3"
+		(property "Reference" "R23"
 			(at 69.85 48.2599 0)
 			(effects
 				(font
@@ -1674,7 +1678,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
-					(reference "R3")
+					(reference "R23")
 					(unit 1)
 				)
 			)
