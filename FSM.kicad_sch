@@ -8605,6 +8605,50 @@
 			)
 		)
 	)
+	(global_label "PWR_ON_RST"
+		(shape input)
+		(at 82.55 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d20eb28e-2478-416d-bc83-43bf0e6be01f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.5699 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWR_ON_RST"
+		(shape input)
+		(at 82.55 67.31 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d3077601-d21d-4e11-84c1-387cdc9020ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.55 82.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "CLK"
 		(shape input)
 		(at 74.93 59.69 180)
@@ -8680,13 +8724,12 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1691d1d6-12df-43d0-ba55-02cec7411fb0")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 106.68 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "10k"
@@ -8697,7 +8740,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 106.68 74.422 90)
 			(effects
 				(font
@@ -8733,7 +8776,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8749,14 +8792,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c53b407-ade2-473b-a091-e2d88ab803f6")
-		(property "Reference" "U23"
+		(property "Reference" "U22"
 			(at 69.85 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -8768,7 +8810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 63.5 113.03 0)
 			(effects
 				(font
@@ -8840,7 +8882,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U23")
+					(reference "U22")
 					(unit 5)
 				)
 			)
@@ -8856,13 +8898,12 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c53b407-ade2-473b-a091-e2d88ab803f7")
-		(property "Reference" "U23"
+		(property "Reference" "U22"
 			(at 110.4817 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -8873,7 +8914,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 110.49 53.34 0)
 			(effects
 				(font
@@ -8945,7 +8986,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U23")
+					(reference "U22")
 					(unit 3)
 				)
 			)
@@ -8961,13 +9002,12 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2468fb0f-d8cd-42d4-b392-03f8636b7789")
-		(property "Reference" "U22"
+		(property "Reference" "U24"
 			(at 48.2517 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -8978,7 +9018,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 48.26 63.5 0)
 			(effects
 				(font
@@ -9050,7 +9090,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U22")
+					(reference "U24")
 					(unit 3)
 				)
 			)
@@ -9066,7 +9106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28e52bfc-54a8-4531-a00e-038af9789054")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR075"
 			(at 20.32 95.25 0)
 			(effects
 				(font
@@ -9116,139 +9156,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 82.55 40.64 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38cae449-1965-4099-8052-ac1e8675a766")
-		(property "Reference" "#PWR0207"
-			(at 82.55 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 82.55 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d03536f4-2913-4894-8a03-8e9839640975")
-		)
-		(instances
-			(project ""
-				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0207")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 82.55 67.31 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b29958d-35cf-4b8b-992a-d6de84752400")
-		(property "Reference" "#PWR0208"
-			(at 82.55 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 82.55 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d03536f4-2913-4894-8a03-8e9839640976")
-		)
-		(instances
-			(project ""
-				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0208")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -9257,20 +9165,19 @@
 	(symbol
 		(lib_id "74xx:74HCT00")
 		(at 67.31 30.48 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d63ea0a-960d-4a4d-a580-206d6b279921")
-		(property "Reference" "U23"
+		(property "Reference" "U22"
 			(at 67.3017 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -9281,7 +9188,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 67.31 30.48 0)
 			(effects
 				(font
@@ -9353,8 +9260,8 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U23")
-					(unit 1)
+					(reference "U22")
+					(unit 2)
 				)
 			)
 		)
@@ -9369,7 +9276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "559322c2-a64e-451e-ae4f-a13f2960348c")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR080"
 			(at 63.5 132.08 0)
 			(effects
 				(font
@@ -9419,7 +9326,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0204")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -9435,14 +9342,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d08ed7b-7740-44f6-b5ef-0566e4b5777c")
-		(property "Reference" "SW1"
+		(property "Reference" "SW2"
 			(at 101.6 90.1701 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Value" "SW_Push"
@@ -9454,7 +9360,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-105xP"
 			(at 107.95 88.9 0)
 			(effects
 				(font
@@ -9490,7 +9396,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "SW1")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -9506,14 +9412,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63962e35-48ce-418a-813f-c84a93a7eee9")
-		(property "Reference" "C3"
+		(property "Reference" "C14"
 			(at 99.06 81.2801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "1u"
@@ -9525,7 +9430,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 101.9048 76.2 0)
 			(effects
 				(font
@@ -9561,7 +9466,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "C3")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -9577,7 +9482,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a8d460f-9a40-47de-af6c-fa9142e4dbc8")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR084"
 			(at 116.84 76.2 0)
 			(effects
 				(font
@@ -9628,7 +9533,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR037")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -9644,14 +9549,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "726a9a8e-f39a-490f-a9de-6260b1fb0525")
-		(property "Reference" "C4"
+		(property "Reference" "C13"
 			(at 92.71 90.1701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" ".01u"
@@ -9663,7 +9567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 95.5548 85.09 0)
 			(effects
 				(font
@@ -9699,7 +9603,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "C4")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -9715,7 +9619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "767cabaf-4001-47e1-9f05-405397a0f5de")
-		(property "Reference" "#PWR0206"
+		(property "Reference" "#PWR082"
 			(at 82.55 55.88 0)
 			(effects
 				(font
@@ -9765,7 +9669,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0206")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -9781,7 +9685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "773e9972-621c-449a-b21c-8fdebb681cad")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR078"
 			(at 41.91 132.08 0)
 			(effects
 				(font
@@ -9831,7 +9735,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0202")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -9847,7 +9751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81f81d5b-7938-4ba7-9643-51ff14392c49")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR076"
 			(at 20.32 129.54 0)
 			(effects
 				(font
@@ -9897,7 +9801,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR042")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -9907,31 +9811,30 @@
 		(lib_id "74xx:74HCT00")
 		(at 110.49 38.1 0)
 		(mirror x)
-		(unit 2)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8308cd5b-fb60-41e5-8341-8ca7b12781d4")
-		(property "Reference" "U23"
+		(property "Reference" "U22"
 			(at 110.4817 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
-			(at 110.4817 44.45 0)
+			(at 110.4817 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 110.49 38.1 0)
 			(effects
 				(font
@@ -10003,8 +9906,8 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U23")
-					(unit 2)
+					(reference "U22")
+					(unit 4)
 				)
 			)
 		)
@@ -10025,7 +9928,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT04"
@@ -10036,7 +9938,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 33.02 30.48 0)
 			(effects
 				(font
@@ -10117,21 +10019,20 @@
 	(symbol
 		(lib_id "74xx:74HCT74")
 		(at 82.55 33.02 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e5c6a9d-69b3-4965-83d0-85639c3044d2")
-		(property "Reference" "U20"
+		(property "Reference" "U23"
 			(at 84.6933 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT74"
@@ -10143,7 +10044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 82.55 33.02 0)
 			(effects
 				(font
@@ -10215,8 +10116,8 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U20")
-					(unit 1)
+					(reference "U23")
+					(unit 2)
 				)
 			)
 		)
@@ -10231,7 +10132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b9fae80-c0fb-441d-88e6-14a0f525276a")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR083"
 			(at 102.87 101.6 0)
 			(effects
 				(font
@@ -10281,7 +10182,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR038")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -10297,7 +10198,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e5b98b1-137a-40c0-8f73-e3e70e727e9d")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR079"
 			(at 63.5 104.14 0)
 			(effects
 				(font
@@ -10347,7 +10248,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0203")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -10363,7 +10264,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a028ff12-e502-4e30-8abb-b9921d7ccaa0")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR077"
 			(at 41.91 104.14 0)
 			(effects
 				(font
@@ -10413,7 +10314,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0201")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -10422,21 +10323,20 @@
 	(symbol
 		(lib_id "74xx:74HCT74")
 		(at 82.55 59.69 0)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1caf2f7-3623-45c8-84d3-4a31343a8578")
-		(property "Reference" "U20"
+		(property "Reference" "U23"
 			(at 84.6933 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT74"
@@ -10448,7 +10348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 82.55 59.69 0)
 			(effects
 				(font
@@ -10520,8 +10420,8 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U20")
-					(unit 2)
+					(reference "U23")
+					(unit 1)
 				)
 			)
 		)
@@ -10535,13 +10435,12 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9c98c23-f753-43d4-bd00-8f6d15cc272f")
-		(property "Reference" "R3"
+		(property "Reference" "R7"
 			(at 106.68 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "10k"
@@ -10552,7 +10451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 106.68 82.042 90)
 			(effects
 				(font
@@ -10588,7 +10487,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "R3")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -10604,14 +10503,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3764dc0-d99b-4a06-8ce4-cdeed9e44926")
-		(property "Reference" "U20"
+		(property "Reference" "U23"
 			(at 26.67 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT74"
@@ -10623,7 +10521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 20.32 113.03 0)
 			(effects
 				(font
@@ -10695,7 +10593,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U20")
+					(reference "U23")
 					(unit 3)
 				)
 			)
@@ -10710,14 +10608,13 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e4ba7987-7e56-4fed-9b66-7c5096a9a098")
-		(property "Reference" "U201"
+		(property "Reference" "U10"
 			(at 97.79 69.8501 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "40106"
@@ -10729,7 +10626,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 102.87 68.58 0)
 			(effects
 				(font
@@ -10801,7 +10698,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U201")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -10817,13 +10714,12 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea272eaa-6e75-4574-8058-84d4b12c6205")
-		(property "Reference" "U22"
+		(property "Reference" "U24"
 			(at 66.0317 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -10834,7 +10730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 66.04 57.15 0)
 			(effects
 				(font
@@ -10906,7 +10802,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U22")
+					(reference "U24")
 					(unit 4)
 				)
 			)
@@ -10922,7 +10818,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f99eaf04-23f8-4087-b814-db76bf480c66")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR085"
 			(at 116.84 83.82 0)
 			(effects
 				(font
@@ -10973,7 +10869,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR036")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -10989,13 +10885,12 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9fa18f2-4958-413c-83b2-c0b849465855")
-		(property "Reference" "U22"
+		(property "Reference" "U24"
 			(at 52.0617 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -11006,7 +10901,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 52.07 33.02 0)
 			(effects
 				(font
@@ -11078,7 +10973,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U22")
+					(reference "U24")
 					(unit 1)
 				)
 			)
@@ -11094,14 +10989,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd72fa06-8501-42df-8129-5f7e72032eac")
-		(property "Reference" "U22"
+		(property "Reference" "U24"
 			(at 48.26 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -11113,7 +11007,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 41.91 113.03 0)
 			(effects
 				(font
@@ -11185,7 +11079,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U22")
+					(reference "U24")
 					(unit 5)
 				)
 			)
@@ -11201,13 +11095,12 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd72fa06-8501-42df-8129-5f7e72032ead")
-		(property "Reference" "U22"
+		(property "Reference" "U24"
 			(at 48.2517 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "74HCT00"
@@ -11218,7 +11111,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 48.26 50.8 0)
 			(effects
 				(font
@@ -11290,7 +11183,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U22")
+					(reference "U24")
 					(unit 2)
 				)
 			)
@@ -11306,7 +11199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fea069a5-9c6a-486c-a19f-e39b7bf0d723")
-		(property "Reference" "#PWR0205"
+		(property "Reference" "#PWR081"
 			(at 82.55 29.21 0)
 			(effects
 				(font
@@ -11356,7 +11249,7 @@
 		(instances
 			(project ""
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "#PWR0205")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
