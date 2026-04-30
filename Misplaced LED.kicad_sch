@@ -188,6 +188,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -292,7 +416,7 @@
 	)
 	(hierarchical_label "M2"
 		(shape input)
-		(at 63.5 92.71 180)
+		(at 55.88 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -303,7 +427,7 @@
 	)
 	(hierarchical_label "M1"
 		(shape input)
-		(at 63.5 81.28 180)
+		(at 55.88 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -314,7 +438,7 @@
 	)
 	(hierarchical_label "M4"
 		(shape input)
-		(at 63.5 115.57 180)
+		(at 55.88 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -325,7 +449,7 @@
 	)
 	(hierarchical_label "M3"
 		(shape input)
-		(at 63.5 104.14 180)
+		(at 55.88 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -344,7 +468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d674d8a-b50c-403a-9644-4897fb034297")
-		(property "Reference" "D7"
+		(property "Reference" "D8"
 			(at 68.8975 96.52 0)
 			(effects
 				(font
@@ -360,7 +484,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 67.31 104.14 0)
 			(effects
 				(font
@@ -405,7 +529,143 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "D7")
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e687543-1eed-4107-8bd0-9dba01eae756")
+		(property "Reference" "R37"
+			(at 59.69 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 59.69 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 59.69 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ccb38398-955c-4e04-9b84-2207722c73b5")
+		)
+		(pin "2"
+			(uuid "3fcb98aa-aafa-415e-83b1-d15e04488693")
+		)
+		(instances
+			(project ""
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40f72d8b-b29d-4dfb-a936-8e4f11d8b06a")
+		(property "Reference" "R39"
+			(at 59.69 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 59.69 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 59.69 105.918 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ccb38398-955c-4e04-9b84-2207722c73b6")
+		)
+		(pin "2"
+			(uuid "3fcb98aa-aafa-415e-83b1-d15e04488694")
+		)
+		(instances
+			(project ""
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -421,7 +681,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a685e7b-97ff-4d66-a6f2-f0de7fda3b6d")
-		(property "Reference" "D5"
+		(property "Reference" "D6"
 			(at 68.8975 73.66 0)
 			(effects
 				(font
@@ -437,7 +697,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 67.31 81.28 0)
 			(effects
 				(font
@@ -482,7 +742,75 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "D5")
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "508deb8e-2cd3-415a-8c6c-fdebe71a8c4c")
+		(property "Reference" "R38"
+			(at 59.69 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 59.69 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 59.69 94.488 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ccb38398-955c-4e04-9b84-2207722c73b7")
+		)
+		(pin "2"
+			(uuid "3fcb98aa-aafa-415e-83b1-d15e04488695")
+		)
+		(instances
+			(project ""
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -498,7 +826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57f14cfd-3b70-416a-a621-252a683da927")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0115"
 			(at 77.47 81.28 0)
 			(effects
 				(font
@@ -549,7 +877,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "#PWR0114")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -565,7 +893,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e9a41a9-e8b0-4164-91e7-744b9efef5e4")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0118"
 			(at 77.47 115.57 0)
 			(effects
 				(font
@@ -616,7 +944,75 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "#PWR0117")
+					(reference "#PWR0118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7067eb16-b3ac-4579-965a-ccc8c085d670")
+		(property "Reference" "R40"
+			(at 59.69 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 59.69 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 59.69 117.348 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ccb38398-955c-4e04-9b84-2207722c73b8")
+		)
+		(pin "2"
+			(uuid "3fcb98aa-aafa-415e-83b1-d15e04488696")
+		)
+		(instances
+			(project ""
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -632,7 +1028,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac9d6934-ccb5-44ae-8999-b5e0c300053b")
-		(property "Reference" "D8"
+		(property "Reference" "D9"
 			(at 68.8975 107.95 0)
 			(effects
 				(font
@@ -648,7 +1044,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 67.31 115.57 0)
 			(effects
 				(font
@@ -693,7 +1089,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "D8")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -709,7 +1105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c341a01d-05a4-42c0-80a2-c4043f31d979")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0117"
 			(at 77.47 104.14 0)
 			(effects
 				(font
@@ -760,7 +1156,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "#PWR0116")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -776,7 +1172,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9da51dc-b32a-4a83-941f-b5c6b4d1eda8")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0116"
 			(at 77.47 92.71 0)
 			(effects
 				(font
@@ -827,7 +1223,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "#PWR0115")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -843,7 +1239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "faaa7b6c-c472-46eb-a31d-1472f7400d76")
-		(property "Reference" "D6"
+		(property "Reference" "D7"
 			(at 68.8975 85.09 0)
 			(effects
 				(font
@@ -859,7 +1255,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 67.31 92.71 0)
 			(effects
 				(font
@@ -904,7 +1300,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/eafb037c-6d41-4032-b2b0-43e0d6e7053a"
-					(reference "D6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
