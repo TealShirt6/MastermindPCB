@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "ba192722-d652-4aff-8267-d8d7e5bc82f5")
 	(paper "A5")
 	(title_block
@@ -17,8 +17,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -27,6 +31,8 @@
 			)
 			(property "Value" "Conn_01x01_Socket"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -35,33 +41,41 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x01, script generated"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_locked" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -70,20 +84,24 @@
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_01x01_Socket_1_1"
@@ -142,8 +160,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -152,6 +174,8 @@
 			)
 			(property "Value" "R"
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -160,47 +184,57 @@
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_0_1"
@@ -220,7 +254,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -238,7 +272,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -257,7 +291,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -268,17 +302,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+5V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -287,38 +327,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+5V_0_1"
@@ -363,7 +411,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -382,7 +430,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -393,17 +441,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -412,38 +466,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -464,7 +526,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -675,14 +737,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 64.77 60.96 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "047aa97b-e048-4a3d-998a-38c0974e5960")
 		(property "Reference" "J5"
 			(at 65.405 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -691,47 +757,59 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 65.405 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 64.77 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 64.77 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 64.77 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "eaa625ba-4b27-4412-850d-bbad5a76eaf9")
+			(uuid "1fe6f439-1cbe-4f7c-8880-7cb57cd15f92")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "J5")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -741,14 +819,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 52.07 60.96 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "079bd02d-30f3-4657-b74a-3985a3e04285")
 		(property "Reference" "J3"
 			(at 52.705 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -757,47 +839,59 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 52.705 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 52.07 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 52.07 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 52.07 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "dc2e5a39-c5bc-4a12-b9f9-cf206b4b88c9")
+			(uuid "77fc6dc9-a716-4206-97c8-ecdc62c00a59")
 		)
 		(instances
-			(project ""
+			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "J3")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -807,23 +901,29 @@
 		(lib_id "power:GND")
 		(at 82.55 60.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41d81f8f-ab66-48ee-8443-bdf9b234909e")
 		(property "Reference" "#PWR0100"
 			(at 82.55 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 82.55 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -832,38 +932,48 @@
 		)
 		(property "Footprint" ""
 			(at 82.55 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 82.55 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 82.55 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "57a9ce83-a6fb-44a6-a152-ea6378336ef5")
+			(uuid "00566e8d-10e8-48b3-992d-1f19e5662098")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -873,23 +983,29 @@
 		(lib_id "power:+5V")
 		(at 69.85 46.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "568ebe12-2bce-40c4-a645-7bd98e35747c")
 		(property "Reference" "#PWR097"
 			(at 69.85 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V"
 			(at 69.85 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -898,38 +1014,48 @@
 		)
 		(property "Footprint" ""
 			(at 69.85 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 69.85 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 69.85 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "5d82cb6c-df42-4662-848c-ae9701117279")
+			(uuid "a8ff2b5a-ca74-4f40-b925-1c9e4729b0f1")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR097")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -939,14 +1065,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 77.47 60.96 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59e0e160-4bed-4bc9-8e92-9ebd5e7f8575")
 		(property "Reference" "J7"
 			(at 78.105 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -955,47 +1085,59 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 78.105 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 77.47 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 77.47 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 77.47 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "bca462b3-36fb-4d25-9006-4db33a05aaf2")
+			(uuid "009238ac-9f67-4c64-8f18-82382007224a")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "J7")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -1005,23 +1147,29 @@
 		(lib_id "power:+5V")
 		(at 57.15 46.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f3257f7-8484-49a6-9c80-cbfad580d973")
 		(property "Reference" "#PWR095"
 			(at 57.15 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V"
 			(at 57.15 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1030,38 +1178,48 @@
 		)
 		(property "Footprint" ""
 			(at 57.15 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 57.15 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 57.15 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "0cfc6830-3635-43eb-bc62-67ffba1d611c")
+			(uuid "a5cc73a8-ff99-4a65-9460-73afd9f40f4f")
 		)
 		(instances
-			(project ""
+			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR095")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -1071,14 +1229,18 @@
 		(lib_id "Device:R")
 		(at 82.55 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67371964-aec5-45ed-8424-945196472776")
 		(property "Reference" "R27"
 			(at 85.09 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1088,6 +1250,8 @@
 		)
 		(property "Value" "10k"
 			(at 85.09 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1097,41 +1261,51 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 80.772 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 82.55 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 82.55 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "6c008e44-dddc-4238-ab3f-e583e769c8f7")
+			(uuid "2f87c3e1-83a7-41f4-91c4-c939085b55fe")
 		)
 		(pin "1"
-			(uuid "23785804-cba0-4b75-ab3b-e39ace0ea94a")
+			(uuid "c0b1677d-932a-42bb-b526-1511aec02fda")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "R27")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -1141,14 +1315,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 64.77 58.42 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ec8101b-64b0-4bc8-bbff-bdf204e0455e")
 		(property "Reference" "J4"
 			(at 65.405 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1157,47 +1335,59 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 65.405 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 64.77 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 64.77 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 64.77 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "6b9adaaa-1ebc-4171-abf7-2e678944682f")
+			(uuid "77be6094-8194-4418-9eb1-fdb248608f0d")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "J4")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -1207,14 +1397,18 @@
 		(lib_id "Device:R")
 		(at 95.25 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92294c28-34ca-425d-8ebf-a47249031a68")
 		(property "Reference" "R28"
 			(at 97.79 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1224,6 +1418,8 @@
 		)
 		(property "Value" "10k"
 			(at 97.79 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1233,41 +1429,51 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 93.472 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 95.25 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 95.25 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "c3972be3-8c10-4082-a1a0-1ec7fd3697f7")
+			(uuid "c3d99de8-5b35-4983-aec5-ed32fa6caa45")
 		)
 		(pin "1"
-			(uuid "c5ee81ff-bf88-4943-bd96-af3930a12bdd")
+			(uuid "bff46e0f-6424-4e5b-966e-e9ac99a073fe")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "R28")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -1277,14 +1483,18 @@
 		(lib_id "Device:R")
 		(at 57.15 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac789692-12b4-4a23-9084-902c99eda972")
 		(property "Reference" "R25"
 			(at 59.69 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1294,6 +1504,8 @@
 		)
 		(property "Value" "10k"
 			(at 59.69 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1303,41 +1515,51 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 55.372 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 57.15 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 57.15 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "10aaa8cf-a19a-45fb-9df7-7bf1d931fe3d")
+			(uuid "dd6b836b-7db1-4a34-921c-f1df55f1c71c")
 		)
 		(pin "1"
-			(uuid "41dd5206-1be2-401b-a0c8-93b583a0357a")
+			(uuid "96877d79-3994-424d-9d87-2562ddc596f9")
 		)
 		(instances
-			(project ""
+			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "R25")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -1347,14 +1569,18 @@
 		(lib_id "Device:R")
 		(at 69.85 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d06710bc-217d-4752-b3d8-12352416ff7f")
 		(property "Reference" "R26"
 			(at 72.39 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1364,6 +1590,8 @@
 		)
 		(property "Value" "10k"
 			(at 72.39 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1373,41 +1601,51 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 68.072 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 69.85 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 69.85 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "d2f978fd-4a2e-4037-88cb-0825d2bb4379")
+			(uuid "c9f708db-8dff-43bc-b505-df205a05b325")
 		)
 		(pin "1"
-			(uuid "74099b73-fa32-4194-8efc-967e8b481e3a")
+			(uuid "5dd91e7a-f34b-4a85-a78c-0b59ea6ced03")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "R26")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -1417,23 +1655,29 @@
 		(lib_id "power:GND")
 		(at 57.15 60.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2abde26-6a29-49b8-bc50-39918da8c55c")
 		(property "Reference" "#PWR096"
 			(at 57.15 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 57.15 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1442,38 +1686,48 @@
 		)
 		(property "Footprint" ""
 			(at 57.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 57.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 57.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "ef706a86-115e-4e11-935b-dc0b2d70cd0d")
+			(uuid "d24b4ca0-3d9e-427d-a46b-9367d4f2366a")
 		)
 		(instances
-			(project ""
+			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR096")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -1483,23 +1737,29 @@
 		(lib_id "power:GND")
 		(at 95.25 60.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4677fb0-e8ab-445f-8a98-741d0c36822f")
 		(property "Reference" "#PWR0102"
 			(at 95.25 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 95.25 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1508,38 +1768,48 @@
 		)
 		(property "Footprint" ""
 			(at 95.25 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 95.25 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 95.25 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "5ed86f14-8c4f-4cfb-924c-f7b0441d0cfa")
+			(uuid "122330af-e791-4cc8-8acc-4f25a1d502cd")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -1549,23 +1819,29 @@
 		(lib_id "power:GND")
 		(at 69.85 60.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e618144a-9158-4343-a3a5-9001b392ae7a")
 		(property "Reference" "#PWR098"
 			(at 69.85 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 69.85 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1574,38 +1850,48 @@
 		)
 		(property "Footprint" ""
 			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "497189eb-e54e-42c1-9dd7-f6e143d1a0dc")
+			(uuid "6b859835-ea24-44f7-84c6-f48029d1d8e2")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR098")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -1615,14 +1901,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 77.47 58.42 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e65c1a06-5443-4d73-9cb5-010bdae3b124")
 		(property "Reference" "J6"
 			(at 78.105 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1631,47 +1921,59 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 78.105 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 77.47 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 77.47 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 77.47 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "bd1ffd55-f8ae-44cc-80ea-b470e442ba8e")
+			(uuid "b61f0f1f-1fb8-4a2b-9e44-da4b2eef87ea")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "J6")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -1681,23 +1983,29 @@
 		(lib_id "power:+5V")
 		(at 82.55 46.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7fd2091-36eb-4e64-9921-ea3be944e573")
 		(property "Reference" "#PWR099"
 			(at 82.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V"
 			(at 82.55 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1706,38 +2014,48 @@
 		)
 		(property "Footprint" ""
 			(at 82.55 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 82.55 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 82.55 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "a3ea2aa9-a912-4d0d-90ce-225f11c551ea")
+			(uuid "3fb805cb-06dc-4e65-b811-a48c6ac4513f")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR099")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -1747,14 +2065,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 90.17 58.42 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9154b7a-a5a6-4317-8424-e0e7bf25572c")
 		(property "Reference" "J8"
 			(at 90.805 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,47 +2085,59 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 90.805 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 90.17 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 90.17 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 90.17 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "0e4b131b-295c-4833-bea7-6aa395134573")
+			(uuid "be004800-3528-4aef-be60-2d74b827ce73")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "J8")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -1813,14 +2147,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 52.07 58.42 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f040d8ef-0686-4dcc-8d11-dc77f53b8f71")
 		(property "Reference" "J2"
 			(at 52.705 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,47 +2167,59 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 52.705 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 52.07 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 52.07 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 52.07 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "dc2e5a39-c5bc-4a12-b9f9-cf206b4b88ca")
+			(uuid "58437f9d-22db-49fb-8d27-b967950b4ffe")
 		)
 		(instances
-			(project ""
+			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "J2")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -1879,23 +2229,29 @@
 		(lib_id "power:+5V")
 		(at 95.25 46.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f095544c-9ac1-4fb0-8821-00dc83cdfb74")
 		(property "Reference" "#PWR0101"
 			(at 95.25 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V"
 			(at 95.25 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1904,38 +2260,48 @@
 		)
 		(property "Footprint" ""
 			(at 95.25 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 95.25 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 95.25 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "9bf00613-8597-428c-84d0-4c7681c6497b")
+			(uuid "e8d81c54-41bf-4530-890f-d0171aedab90")
 		)
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/2f005cfb-eaaa-4acc-992e-faf91d30027a"
 					(reference "#PWR0101")
+					(unit 1)
+				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -1945,14 +2311,18 @@
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 90.17 60.96 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fab1e364-4984-44c7-af1d-bc2d62109c3b")
 		(property "Reference" "J9"
 			(at 90.805 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1961,42 +2331,50 @@
 		)
 		(property "Value" "Conn_01x01_Socket"
 			(at 90.805 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 90.17 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 90.17 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 90.17 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "0d128471-9b6d-4e32-aeaa-753d28df247d")
+			(uuid "35c9dc27-bc7d-4faf-b38a-990fad08fe6a")
 		)
 		(instances
 			(project "ECE145Mastermind"
@@ -2004,7 +2382,35 @@
 					(reference "J9")
 					(unit 1)
 				)
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/e5438d73-2575-4a93-b34a-ff9058eb0e20"
+					(reference "J17")
+					(unit 1)
+				)
 			)
+		)
+	)
+	(group ""
+		(uuid "556828a5-a921-4445-884f-657fefd1b36e")
+		(members "047aa97b-e048-4a3d-998a-38c0974e5960" "079bd02d-30f3-4657-b74a-3985a3e04285"
+			"3881dfc9-c93e-4af7-a139-cf8ec496f57e" "3a518389-1f7c-47a8-b1df-3a35330bb676"
+			"3e9d5f1c-8d21-48ae-a929-2e5edad5c30c" "41d81f8f-ab66-48ee-8443-bdf9b234909e"
+			"484c31b4-5a6c-461b-8029-572fbe61e3bf" "568ebe12-2bce-40c4-a645-7bd98e35747c"
+			"59e0e160-4bed-4bc9-8e92-9ebd5e7f8575" "5f3257f7-8484-49a6-9c80-cbfad580d973"
+			"61fefa72-db92-4924-bb2a-85f919930aa7" "67371964-aec5-45ed-8424-945196472776"
+			"6ab9e4c8-6954-4b9c-bb51-a825c95d166d" "6b8f0ff5-8022-4f5b-aecc-22801abe911d"
+			"6ec8101b-64b0-4bc8-bbff-bdf204e0455e" "836b2e4a-916f-4d53-9bf8-b03b4b9c35b7"
+			"866b93b8-5812-46ca-8f9a-c020902ca797" "8c77292a-216f-48b5-b098-cff32b95e874"
+			"92294c28-34ca-425d-8ebf-a47249031a68" "944bfc88-a360-4315-b77e-6882e6dfc81f"
+			"971d2d92-1bc2-413b-99cd-a9b5cd1f5edd" "ac789692-12b4-4a23-9084-902c99eda972"
+			"c8980a7f-f1ad-452c-8801-a5079a937d8a" "d06710bc-217d-4752-b3d8-12352416ff7f"
+			"d113d4d7-a3c6-4dba-806b-28bd0857f350" "d2abde26-6a29-49b8-bc50-39918da8c55c"
+			"dc558321-94f7-4857-8de8-c0664a69ec0d" "dc99591c-d891-44ba-a9a9-271ed1b89735"
+			"de7d4593-e262-41c8-b277-0f71d7e53231" "e137e82e-edfe-4a0c-bae0-06ee1c82ef1d"
+			"e2156113-8fc4-421d-ba04-19fcbecf7198" "e4677fb0-e8ab-445f-8a98-741d0c36822f"
+			"e618144a-9158-4343-a3a5-9001b392ae7a" "e65c1a06-5443-4d73-9cb5-010bdae3b124"
+			"e7fd2091-36eb-4e64-9921-ea3be944e573" "e9154b7a-a5a6-4317-8424-e0e7bf25572c"
+			"f040d8ef-0686-4dcc-8d11-dc77f53b8f71" "f095544c-9ac1-4fb0-8821-00dc83cdfb74"
+			"f9ca745b-08eb-4b99-9924-7e70a618dc02" "fab1e364-4984-44c7-af1d-bc2d62109c3b"
 		)
 	)
 )
