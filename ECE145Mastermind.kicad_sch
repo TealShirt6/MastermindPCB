@@ -23697,7 +23697,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "VoltageComparator.kicad_sch"
+		(property "Sheetfile" "VoltageComparator3.kicad_sch"
 			(at 73.66 121.2346 0)
 			(effects
 				(font
@@ -24090,7 +24090,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "VoltageComparator.kicad_sch"
+		(property "Sheetfile" "VoltageComparator2.kicad_sch"
 			(at 52.07 121.2346 0)
 			(effects
 				(font
@@ -24254,7 +24254,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "VoltageComparator.kicad_sch"
+		(property "Sheetfile" "VoltageComparator4.kicad_sch"
 			(at 95.25 121.2346 0)
 			(effects
 				(font
