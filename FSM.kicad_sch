@@ -10060,7 +10060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75b7e107-3f4c-46d2-8685-e70204dd1212")
-		(property "Reference" "TP6"
+		(property "Reference" "TP9"
 			(at 100.33 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10121,7 +10121,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "TP6")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -11272,7 +11272,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e4ba7987-7e56-4fed-9b66-7c5096a9a098")
-		(property "Reference" "U10"
+		(property "Reference" "U14"
 			(at 97.79 69.8501 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11372,7 +11372,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "U10")
+					(reference "U14")
 					(unit 2)
 				)
 			)
@@ -11506,7 +11506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eed220e0-b235-4676-8b4f-407dc38c834b")
-		(property "Reference" "TP7"
+		(property "Reference" "TP8"
 			(at 99.06 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11567,7 +11567,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
-					(reference "TP7")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
