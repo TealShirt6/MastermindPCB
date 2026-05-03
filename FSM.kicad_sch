@@ -3292,6 +3292,12 @@
 		(uuid "4cf45a89-6b41-454c-b38a-58ecda9f94f7")
 	)
 	(junction
+		(at 92.71 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6e744f0-d646-47c4-8faa-a353db421931")
+	)
+	(junction
 		(at 118.11 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3320,10 +3326,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa37d4cf-6f7e-45ab-8fc4-3e2b664119ea")
-	)
-	(no_connect
-		(at 90.17 62.23)
-		(uuid "ad32b7a6-67b3-4c08-b176-fbe0f4351012")
 	)
 	(wire
 		(pts
@@ -3407,6 +3409,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 90.17) (xy 85.09 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48cd23cc-19a2-4b3e-aa77-965f25858bf6")
+	)
+	(wire
+		(pts
 			(xy 118.11 19.05) (xy 118.11 38.1)
 		)
 		(stroke
@@ -3414,6 +3426,16 @@
 			(type default)
 		)
 		(uuid "4c03678a-d64e-423b-913e-9736a80e49ba")
+	)
+	(wire
+		(pts
+			(xy 85.09 95.25) (xy 92.71 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c6e9cbe-56b9-440d-a2a4-12bb6cdf5225")
 	)
 	(wire
 		(pts
@@ -3527,6 +3549,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 35.56) (xy 102.87 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91ab96be-cd2f-4d6b-b1a4-c41c21784603")
+	)
+	(wire
+		(pts
 			(xy 96.52 92.71) (xy 96.52 93.98)
 		)
 		(stroke
@@ -3584,6 +3616,16 @@
 			(type default)
 		)
 		(uuid "ac0f3ce4-86ff-4445-a8b2-0136871d228c")
+	)
+	(wire
+		(pts
+			(xy 90.17 62.23) (xy 90.17 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af4d675f-8f91-49e2-b479-c32e9d360b80")
 	)
 	(wire
 		(pts
@@ -3727,7 +3769,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 35.56) (xy 102.87 35.56)
+			(xy 90.17 35.56) (xy 92.71 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3754,6 +3796,16 @@
 			(type default)
 		)
 		(uuid "f83c1c04-70d4-4db5-9376-6540bebb24b6")
+	)
+	(wire
+		(pts
+			(xy 92.71 95.25) (xy 92.71 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb132731-bd3e-4c0e-b4df-74219a06a4de")
 	)
 	(wire
 		(pts
@@ -9011,6 +9063,17 @@
 		)
 		(uuid "530e408b-1e7a-42f6-b9c6-5fb4e203a89f")
 	)
+	(hierarchical_label "~{Wait}"
+		(shape output)
+		(at 69.85 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6755192c-88cf-4eae-a9bc-12ee2eecc5a2")
+	)
 	(hierarchical_label "DONE"
 		(shape input)
 		(at 21.59 30.48 180)
@@ -10279,6 +10342,123 @@
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
 					(reference "#PWR079")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HCT00")
+		(at 77.47 92.71 0)
+		(mirror y)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "812f25a8-a57c-4aea-a081-8972b2b56034")
+		(property "Reference" "U22"
+			(at 77.4783 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HCT00"
+			(at 77.4783 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 77.47 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hct00"
+			(at 77.47 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 77.47 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "13"
+			(uuid "4e3f7a54-934b-4bab-99b5-4426a5522842")
+		)
+		(pin "12"
+			(uuid "65f3913b-a46b-4d9d-9d11-cb81b210c2e7")
+		)
+		(pin "8"
+			(uuid "67526610-77f5-4e9b-8845-b6660e50b992")
+		)
+		(pin "10"
+			(uuid "8a738659-9be1-49a9-b389-12142c609cb4")
+		)
+		(pin "9"
+			(uuid "47cd2d53-b94c-42ef-95cb-9980d818b037")
+		)
+		(pin "2"
+			(uuid "6dcab37e-411f-4211-b1e5-ac6142428ad3")
+		)
+		(pin "1"
+			(uuid "ce6cba10-a4fa-4238-9736-7805ef01a37e")
+		)
+		(pin "4"
+			(uuid "981d4000-01a1-4685-96c5-8dea67dddd8f")
+		)
+		(pin "5"
+			(uuid "7a7dc51b-f4cf-42e1-b267-ee2d20b20825")
+		)
+		(pin "3"
+			(uuid "50a989a7-b7da-4247-8928-2afa9a2b6b76")
+		)
+		(pin "6"
+			(uuid "97e4b863-8750-41ef-85b5-09462b9813a8")
+		)
+		(pin "11"
+			(uuid "2b820564-47de-4222-a797-506fae1111bc")
+		)
+		(pin "14"
+			(uuid "83902574-cc9a-4d3a-9288-4c3d8d9eac58")
+		)
+		(pin "7"
+			(uuid "48f53a5d-f2a9-48a4-80d5-6998ac6498e0")
+		)
+		(instances
+			(project "ECE145Mastermind"
+				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/c249946c-91e3-42cd-8f8a-d6059405d3e8"
+					(reference "U22")
+					(unit 2)
 				)
 			)
 		)
