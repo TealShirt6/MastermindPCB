@@ -1870,7 +1870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06d13616-e727-4d60-b589-4be31081fa87")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR087"
 			(at 78.74 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -1931,7 +1931,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "#PWR088")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -2228,7 +2228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6af0278e-dfce-4919-b065-2daa2098e470")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR086"
 			(at 34.29 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -2289,7 +2289,7 @@
 		(instances
 			(project "ECE145Mastermind"
 				(path "/8c64fe8a-5d6b-41bc-b3a3-9bda7b2e0f2c/4f59e726-7fd4-4ef0-8dbb-7a41976aa953"
-					(reference "#PWR087")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
